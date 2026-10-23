@@ -1,0 +1,10 @@
+services:
+  api:
+    restart: always
+    build:
+      context: .
+    image: ludiq:latest
+    env_file:
+      - .env
+    ports:
+      - "5051:5051"
